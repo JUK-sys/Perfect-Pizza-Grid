@@ -1,0 +1,59 @@
+
+ body {
+            background-color:#CAF0F8 ;
+        }
+        .container {
+            display: grid;
+            padding: 1em 1em;
+            grid-template-columns: repeat(2,1f);
+            grid-column-gap: 0px;
+            grid-row-gap: 1px;
+            grid-template-areas: initial;
+        }
+        .row img{
+            width: 80%;
+            height: 150px auto;
+            object-fit: cover;
+            cursor: pointer;
+            transition: 0.5s;
+            border-radius: 2em;
+            padding: 1em;
+        }
+        .row h3 {
+            text-align: center;
+        }
+        .row h1 {
+            text-align: center;
+        }
+        .col-4 {
+            background-color: #00B4D8;
+            border: 0.5em;
+            text-align: center;
+            border-radius: 1em;
+            padding-bottom: 20px;
+            margin: 50%;
+            
+        }
+        .box {
+            border-radius: 10em;
+            padding: 5em;
+            size: 10px;
+            margin: 10em;
+            flex: 1;
+        }
+        .contact_us {
+            text-align: center;
+            background-color: #0077B6 ;
+            border-radius: 30%;
+            padding-bottom: 20px;
+            padding-top: 1.5px;
+            padding: 10px;
+
+        }
+        .footer {
+            background-color: #48CAE4;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20%;
+        }
+        
