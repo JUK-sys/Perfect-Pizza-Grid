@@ -1,28 +1,110 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect Pizza</title>
     <link rel="stylesheet" href="simple-grid.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-
-        <body>
+    
             <div class="container">
+
+
                 <div class="row">
                   <div class="col-12 center">
                       
                     <!-- This content will take up 3/12 (or 1/4) of the container -->
         
+<h1>Pizza Shopping Cart</h1>
+
                 <h1>Perfect Pizza</h1> 
             </div>
             </div>
             
+            <div class="flexbox cart">
+                <h2>Shopping Cart</h2>
+                <table class="theCartTable">
+                    <tr>
+                        <td class="item">
+                            <h3 class="item">Small Pizza</h3>
+                        </td>
+                        <td><button class="increaseBtn small" id="test" on type="button" name="increase">+</button></td>
+                        <td>
+                            <h3 class="smallPizzaQty item">0</h3>
+                        </td>
+                        <td><button class="decreaseBtn small" on type="button" name="decrease">-</button></td>
+                        <td>
+                            <h3 class="item">R<span class="smallPizzaTotal">0.00</span>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td class="item">
+                            <h3 class="item">Medium Pizza</h3>
+                        </td>
+                        <td><button class="increaseBtn medium" on type="button" name="increase">+</button></td>
+                        <td>
+                            <h3 class="mediumPizzaQty item">0</h3>
+                        </td>
+                        <td><button class="decreaseBtn medium" on type="button" name="decrease">-</button></td>
+                        <td>
+                            <h3 class="item">R<span class="mediumPizzaTotal">0.00</span>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>
+                            <h3 class="item">Large Pizza</h3>
+                        </td>
+                        <td><button class="increaseBtn large" on type="button" name="increase">+</button></td>
+                        <td>
+                            <h3 class="largePizzaQty item">0</h3>
+                        </td>
+                        <td><button class="decreaseBtn large" on type="button" name="decrease">-</button></td>
+                        <td>
+                            <h3 class="item">R<span class="largePizzaTotal">0.00</span>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="4">
+                            <h3 class="item">Total Cost</h3>
+                        </td>
+                        <td>
+                            <h3 class="item">R<span class="theCartTotal">0.00</span></h3>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="5">
+                            <button class="checkOut hidden" on type="button" name="checkOut">Check Out</button>
+                        </td>
+                    </tr>
+                </table>
+        
+                <div class="payOut hidden">
+                    <table class="cartTable">
+                        <tr>
+                            <h3 class="hidden item message">Message</h3>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Payment Amount:</h3>
+                            </td>
+                            <td class="pAmt">R<input class="payAmt" type="numbers"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button class="payBtn" on type="button" name="pay">Pay</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-4">
                     <!-- This content will take up 3/12 (or 1/4) of the container -->
@@ -37,6 +119,8 @@
          <div>
             Beef, Beef Sausage, Green Pepper, Marinara Sauce, Mozzarella Cheese, Mushroom, Olives, Pepperoni, Red Onion, Sliced Macon
             </div>
+            <button class="increaseBtn small buy" on type="button" name="increase">Buy</button>
+
             </div>
         </div>
          
@@ -52,7 +136,9 @@
                <h3>R89.00</h3>
                <div>
                Beef, Beef Sausage, Green Pepper, Marinara Sauce, Mozzarella Cheese, Mushroom, Olives, Pepperoni, Red Onion, Sliced Macon
-            </div>  
+            </div> 
+            <button class="increaseBtn medium buy" on type="button" name="increase">Buy</button>
+
             </div>
         </div>
         
@@ -65,6 +151,8 @@
           <div>
             Beef, Beef Sausage, Green Pepper, Marinara Sauce, Mozzarella Cheese, Mushroom, Olives, Pepperoni, Red Onion, Sliced Macon
             </div>
+            <button class="increaseBtn large buy" on type="button" name="increase">Buy</button>
+
         </div>
         </div>
         </div>
@@ -77,6 +165,7 @@
                     <div>
                     Contact us at: (021)-541-1000 
                     </div>
+                   <!--<button class="callBtn" on type="button" name="call">Call</button> --> 
                 
                     <div>
                     twitter
@@ -98,10 +187,11 @@
     </div>
     </div>
   </div>
-            
+         
+  <script src="Pizza-Cart.js" charset="utf-8"></script>
+
         </body>
         </html>
 
 </body>
 </html>
-
